@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import os
 import sys
@@ -209,7 +208,6 @@ def main():
     ensure_java()
     download_cfr()
 
-    # Default output: current working directory, named after the input file
     if not output_dir:
         base = os.path.splitext(os.path.basename(input_path))[0]
         output_dir = os.path.join(os.getcwd(), base + "-src")
